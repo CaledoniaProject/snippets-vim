@@ -371,4 +371,30 @@ snippet page "Pagination"
 </div>
 endsnippet
 
+snippet breadcrumb "breadcrumb ol"
+<ol class="breadcrumb">
+	<li class="active">${1:Home}</li>
+	<li><a href="#">${2}</a></li>
+</ol>
+endsnippet
+
+snippet well "well (normal)"
+<div class="well">
+	${1}
+</div>
+endsnippet
+
+snippet dropdown "dropdown with button"
+<div class="dropdown">
+	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" 
+			data-toggle="dropdown" aria-expanded="true">
+		${1:DropDown}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">${2:Action}</a></li>
+	</ul>
+</div>
+endsnippet
+
 # vim:ft=snippets:
