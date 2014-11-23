@@ -236,7 +236,7 @@ snippet a "Link" w
 endsnippet
 
 snippet p "paragraph" w
-<p>$0</p>
+<p class="${1}">$0</p>
 endsnippet
 
 snippet li "list item" w
@@ -312,6 +312,15 @@ snippet icon "glyphicon (bootstrap)"
 <span class="glyphicon glyphicon-${1}" aria-hidden="true"></span>
 endsnippet
 
+snippet panel "panel with headings"
+<div class="panel panel-default">
+	<div class="panel-heading">${1}</div>
+	<div class="panel-body">
+		${2}
+	</div>
+</div>
+endsnippet
+
 snippet jumbotron "jumbotron with h1 and button"
 <div class="jumbotron">
 	<h1>${1}</h1>
@@ -333,6 +342,32 @@ snippet containeralt "add a container and row"
 	<div class="row">
 		${1}
 	</div>
+</div>
+endsnippet
+
+snippet page "Pagination"
+<div class="text-center">
+	<nav>
+		<ul class="pagination">
+			<li>
+				<a href="#" rel="prev">
+					<span aria-hidden="true">&laquo;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li>
+				<a href="#" rel="next">
+					<span aria-hidden="true">&raquo;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
 </div>
 endsnippet
 
