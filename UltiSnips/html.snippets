@@ -172,6 +172,12 @@ snip.rv = snip.fn and 'Hallo' or 'Nothin'
 </body>
 endsnippet
 
+snippet div. "XHTML <div class=>" w
+<div class="${1}">
+	$0
+</div>
+endsnippet
+
 snippet div "XHTML <div>" w
 <div`!p snip.rv=' id="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""``!p snip.rv=' class="' if t[2] else ""`${2:name}`!p snip.rv = '"' if t[2] else ""`>
 	$0
@@ -190,6 +196,22 @@ endsnippet
 
 snippet h1 "XHTML <h1>" w
 <h1 id="${1/[\w\d]+|( )/(?1:_:\L$0\E)/g}">${1}</h1>
+endsnippet
+
+snippet h2 "XHTML <h2>" w
+<h2 id="${1/[\w\d]+|( )/(?1:_:\L$0\E)/g}">${1}</h2>
+endsnippet
+
+snippet h3 "XHTML <h3>" w
+<h3 id="${1/[\w\d]+|( )/(?1:_:\L$0\E)/g}">${1}</h3>
+endsnippet
+
+snippet h4 "XHTML <h4>" w
+<h4 id="${1/[\w\d]+|( )/(?1:_:\L$0\E)/g}">${1}</h4>
+endsnippet
+
+snippet h5 "XHTML <h5>" w
+<h5 id="${1/[\w\d]+|( )/(?1:_:\L$0\E)/g}">${1}</h5>
 endsnippet
 
 snippet head "XHTML <head>"
